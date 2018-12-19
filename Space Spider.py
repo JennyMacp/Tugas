@@ -160,7 +160,7 @@ while(running):
         if event.type == pygame.QUIT:
             pygame.quit()
             exit(0)
-            # Menembak
+            # Suara Menembak
         if event.type == pygame.MOUSEBUTTONDOWN:
             Pelurunya.append([angle, new_Pesawatpos[0]+32, new_Pesawatpos[1]+32])
             SuaraPeluru.play()
