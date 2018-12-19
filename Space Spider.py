@@ -202,7 +202,7 @@ else:
 text = font.render("Total Score: {}".format(score), True, (255, 255, 255))
 textRect = text.get_rect()
 textRect.centerx = screen.get_rect().centerx
-textRect.centery = screen.get_rect().centery + 24
+textRect.centery = screen.get_rect().centery + 400
 screen.blit(text, textRect)
 
 while True:
