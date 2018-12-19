@@ -10,8 +10,8 @@ width, height = 640, 480 # Ukuran Layar game
 screen = pygame.display.set_mode((width, height))
 	# Key 
 keys = {
-    "top": True, 
-    "bottom": True,
+    "left": False, 
+    "right": False,
 }
 running = True
 Pesawatpos = [140, 240] # Posisi Pesawat
@@ -167,20 +167,20 @@ while(running):
             # tombol untuk menggerakkan pesawat
         if event.type == pygame.KEYDOWN:
             if event.key == K_w:
-                keys["top"] = True
+                keys["left"] = True
             elif event.key == K_s:
-                keys["bottom"] = True
+                keys["right"] = True
         if event.type == pygame.KEYUP:
             if event.key == K_w:
-                keys["top"] = False
+                keys["left"] = False
             elif event.key == K_s:
-                keys["bottom"] = False
+                keys["right"] = False
     	# Akhir Perulangan
     	# Gerakan pesawat
-    if keys["top"]:
-        Pesawatpos[1] -= 5 # kurangi nilai y
-    elif keys["bottom"]:
-        Pesawatpos[1] += 5 # tambah nilai y
+    if keys["left"]:
+        Pesawatpos[0] -= 5 # kurangi nilai y
+    elif keys["right"]:
+        Pesawatpos[0] += 5 # tambah nilai y
         # keadaan jika waktu habis
     if pygame.time.get_ticks() > countdown_timer:
         running = False
