@@ -10,8 +10,8 @@ width, height = 640, 480 # Ukuran Layar game
 screen = pygame.display.set_mode((width, height))
 	# Key 
 keys = {
-    "top": False, 
-    "bottom": False,
+    "top": True, 
+    "bottom": True,
 }
 running = True
 Pesawatpos = [140, 240] # Posisi Pesawat
