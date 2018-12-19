@@ -99,7 +99,7 @@ while(running):
         # waktu kemuculan
         enemy_timer = randint(1, 100)
 
-    index = 0
+    index = 5
     for enemy in enemies:
         	# Musuh bergerak dengan kecepatan 1.5 pixel ke kiri
         enemy[0] -= 1.5
